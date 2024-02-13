@@ -1,8 +1,11 @@
 #ignore all data files and draft code
 ./model*
-./code/Darts_examples
 ./data/*
 ./data/raw/*
+
+# ignore folders
+Darts*
+model*
 
 #ignore pipenv files
 pipfile.*
@@ -15,5 +18,5 @@ pip*
 *.json
 .jupyter
 
-!.gitignore
+.gitignore
 

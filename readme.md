@@ -2,6 +2,8 @@
 
 Time series forecasting with sales data: 54 stores x 33 products families.
 
+Use Darts library.
+
 # Project structure
 
 3 main folders: code, data, output.  folder is not tracked with git (set by .gitignore).
