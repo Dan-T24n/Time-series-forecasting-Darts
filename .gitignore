@@ -1,4 +1,4 @@
-#ignore all data files and draft code
+#ignore data files and draft code
 ./model*
 ./data/*
 ./data/raw/*
@@ -16,7 +16,4 @@ pip*
 *.csv
 *.DS_Store
 *.json
-.jupyter
-
-.gitignore
 
