@@ -1,6 +1,6 @@
 #ignore all data files and draft code
 ./model*
-./Darts_example*
+./code/Darts*
 ./data/*
 ./data/raw/*
 
