@@ -1,16 +1,22 @@
-# Intro
+# Summary
 
 Time series forecasting with sales data: 54 stores x 33 products families.
 
-Testing 2 main approaches:
- - Local models: one per store-family series, Exponential Smoothing, 1782 models
- - Global models: fit one model for all family group of series, LightGBM, 33 models
+Testing *Apple M1 Metal GPU*:
+ - Local models Exponential Smoothing : one per store-family series, 1782 models
+ - Global models LightGBM: fit one model for each family (list of 54 series), 33 models
+
+Lessons learned:
+ - Exponential Smoothing is slow, but quite accurate
+ - LightGBM is faster, allows high-dimension static covariates
+ - LGBM easy to overfit, need careful cross-validation
+ - No memory issue
 
 Next step: build ensemble forecasts.
 
 # Project structure
 
-3 main folders: code, data, output.  Data and draft code folders is not tracked with git (set by .gitignore).
+3 main folders: code, data, output.  Data and draft code folders are not tracked with git (too large).
 
 - Data: raw data and processed data. Unzip Kaggle data into data/raw folder to start.
 
@@ -31,5 +37,5 @@ Folder structure:
 ├── output
 │   ├── graph
 │   └── table
-└── Kaggle_api_template
+└── Kaggle_template
 ```
