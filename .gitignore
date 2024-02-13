@@ -1,0 +1,19 @@
+#ignore all data files and draft code
+./model*
+./Darts_example*
+./data/*
+./data/raw/*
+
+#ignore pipenv files
+pipfile.*
+pip*
+
+#ignore environment files
+*.env
+*.csv
+*.DS_Store
+*.json
+.jupyter
+
+!.gitignore
+
