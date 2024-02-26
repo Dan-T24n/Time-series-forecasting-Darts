@@ -1,6 +1,8 @@
 #ignore data files and draft code
+draft/
+.csv
 
-# ignore folders
+#ignore folders
 Darts*
 model*
 data/raw/
@@ -13,4 +15,3 @@ pip*
 *.env
 *.DS_Store
 *.json
-train.csv
